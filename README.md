@@ -75,6 +75,10 @@ const data2 = serializer.import(csvStr);
 
 Empty values in CSV are converted to `undefined` and nullish JS values are serialized to an empty cell.
 
+`.import()` automatically infers type information from the schema:
+
+<img src="img/screenshot_1.png" width="1000">
+
 ## CSV Serialization Config
 
 This library is simply a wrapper around [Papaparse][], the constructor takes a 2nd argument where Papaparse config can be specified:
