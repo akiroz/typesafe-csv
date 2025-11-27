@@ -1,0 +1,7 @@
+pre-commit:
+  jobs:
+    - run: yarn lint {staged_files}
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      stage_fixed: true
+    - run: yarn tsc --noEmit
+    - run: yarn test

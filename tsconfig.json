@@ -1,0 +1,14 @@
+{
+    "include": ["src"],
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "module": "nodenext",
+        "lib": ["ES2022.Error"],
+        "target": "es2022",
+        "strict": true,
+        "sourceMap": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "outDir": "dist"
+    }
+}
